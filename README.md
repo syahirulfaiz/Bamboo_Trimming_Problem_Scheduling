@@ -2,11 +2,11 @@
 
 This programming puzzle, Bamboo Trimming Problem, originated from a research paper ‘Bamboo Garden Trimming (BGT) Problem (Perpetual maintenance of machines with different attendance urgency factors)’ by Prof Leszek Gąsieniec et. al[1]. 
 
-The paper discussed how to design a perpetual schedule of cuts to maintain the tallest bamboo height as low as possible. This COMP526 assignment specifically categorised as discrete BGT. The constraint of this discrete problem is we can only trim one bamboo for each day, and the actual trimming is instantaneous (cut to the root so that the height becomes zero).
+The paper discussed how to design a perpetual schedule of cuts to maintain the tallest bamboo height as low as possible. The code specifically categorised as discrete BGT. The constraint of this discrete problem is we can only trim one bamboo for each day, and the actual trimming is instantaneous (cut to the root so that the height becomes zero).
 
-We have not enough time to finish studying the paper cited in the Reference section. Therefore, our design is probably not optimised enough. After we read and studied the reference, we decided to use Reduce-Max approach [1], which is similar a greedy priority scheduling wherein each day we cut the tallest bamboo, regardless of the growth rates distribution, 
+We decided to use Reduce-Max approach [1], which is similar a greedy priority scheduling wherein each day we cut the tallest bamboo, regardless of the growth rates distribution, 
 
-and the maximum quotient of $$\frac{maxHeight}{sumOfGrowthRates}$$ becomes the ‘ratio’ we report based on our designed schedule list C.
+and the maximum quotient of $$\frac{maxHeight}{sumOfGrowthRates}$$ becomes the ‘ratio’ we report.
 
 # References #
 
